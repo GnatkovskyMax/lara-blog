@@ -1,0 +1,176 @@
+Log opened at 2018-01-26 21:50:39
+I: Connecting to configured address/port: localhost:9001.
+I: Connected to client. :-)
+-> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" fileuri="file:///C:/OSPanel/domains/blog/routes/web.php" language="PHP" xdebug:language_version="5.6.1-dev" protocol_version="1.0" appid="12712" idekey="PHPSTORM"><engine version="2.5.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[http://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2017 by Derick Rethans]]></copyright></init>
+
+<- feature_set -i 1 -n show_hidden -v 1
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+<- feature_set -i 2 -n max_depth -v 1
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+<- feature_set -i 3 -n max_children -v 100
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+<- feature_set -i 4 -n extended_properties -v 1
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" status="starting" reason="ok"><error code="3"><message><![CDATA[invalid or missing options]]></message></error></response>
+
+<- status -i 5
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="status" transaction_id="5" status="starting" reason="ok"></response>
+
+<- step_into -i 6
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="6" status="break" reason="ok"><xdebug:message filename="file:///C:/OSPanel/domains/blog/routes/web.php" lineno="14"></xdebug:message></response>
+
+<- eval -i 7 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="eval" transaction_id="7"><property type="bool"><![CDATA[0]]></property></response>
+
+<- eval -i 8 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="eval" transaction_id="8"><property type="bool"><![CDATA[0]]></property></response>
+
+<- eval -i 9 -- aXNzZXQoJF9TRVJWRVJbJ1NTSF9DT05ORUNUSU9OJ10p
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="eval" transaction_id="9"><property type="bool"><![CDATA[0]]></property></response>
+
+<- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9BRERSJ10p
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+<- breakpoint_set -i 11 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/RegisterController.php -n 53
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="11" id="127120001"></response>
+
+<- breakpoint_set -i 12 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/RegisterController.php -n 64
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="12" id="127120002"></response>
+
+<- breakpoint_set -i 13 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 38
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="13" id="127120003"></response>
+
+<- breakpoint_set -i 14 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 48
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="14" id="127120004"></response>
+
+<- breakpoint_set -i 15 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 58
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="15" id="127120005"></response>
+
+<- breakpoint_set -i 16 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/RegisterController.php -n 49
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="16" id="127120006"></response>
+
+<- breakpoint_set -i 17 -t line -f file://C:/OSPanel/domains/blog/routes/web.php -n 21
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="17" id="127120007"></response>
+
+<- breakpoint_set -i 18 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 56
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="18" id="127120008"></response>
+
+<- breakpoint_set -i 19 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 43
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="19" id="127120009"></response>
+
+<- breakpoint_set -i 20 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/RegisterController.php -n 57
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="20" id="127120010"></response>
+
+<- breakpoint_set -i 21 -t line -f file://C:/OSPanel/domains/blog/routes/web.php -n 18
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="21" id="127120011"></response>
+
+<- breakpoint_set -i 22 -t line -f file://C:/OSPanel/domains/blog/routes/web.php -n 23
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="22" id="127120012"></response>
+
+<- breakpoint_set -i 23 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/RegisterController.php -n 51
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="23" id="127120013"></response>
+
+<- breakpoint_set -i 24 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 44
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="24" id="127120014"></response>
+
+<- breakpoint_set -i 25 -t line -f file://C:/OSPanel/domains/blog/routes/web.php -n 17
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="25" id="127120015"></response>
+
+<- breakpoint_set -i 26 -t line -f file://C:/OSPanel/domains/blog/routes/web.php -n 19
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="26" id="127120016"></response>
+
+<- breakpoint_set -i 27 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/RegisterController.php -n 61
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="27" id="127120017"></response>
+
+<- breakpoint_set -i 28 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 39
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="28" id="127120018"></response>
+
+<- breakpoint_set -i 29 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/RegisterController.php -n 63
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="29" id="127120019"></response>
+
+<- breakpoint_set -i 30 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 57
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="30" id="127120020"></response>
+
+<- breakpoint_set -i 31 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/RegisterController.php -n 52
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="31" id="127120021"></response>
+
+<- breakpoint_set -i 32 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 9
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="32" id="127120022"></response>
+
+<- breakpoint_set -i 33 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/RegisterController.php -n 59
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="33" id="127120023"></response>
+
+<- breakpoint_set -i 34 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 46
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="34" id="127120024"></response>
+
+<- breakpoint_set -i 35 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/RegisterController.php -n 56
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="35" id="127120025"></response>
+
+<- breakpoint_set -i 36 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 55
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="36" id="127120026"></response>
+
+<- breakpoint_set -i 37 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 49
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="37" id="127120027"></response>
+
+<- breakpoint_set -i 38 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/RegisterController.php -n 67
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="38" id="127120028"></response>
+
+<- breakpoint_set -i 39 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 45
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="39" id="127120029"></response>
+
+<- breakpoint_set -i 40 -t line -f file://C:/OSPanel/domains/blog/routes/web.php -n 24
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="40" id="127120030"></response>
+
+<- breakpoint_set -i 41 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/RegisterController.php -n 50
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="41" id="127120031"></response>
+
+<- breakpoint_set -i 42 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 50
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="42" id="127120032"></response>
+
+<- breakpoint_set -i 43 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 54
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="43" id="127120033"></response>
+
+<- breakpoint_set -i 44 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 37
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="44" id="127120034"></response>
+
+<- breakpoint_set -i 45 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/RegisterController.php -n 55
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="45" id="127120035"></response>
+
+<- breakpoint_set -i 46 -t line -f file://C:/OSPanel/domains/blog/routes/web.php -n 25
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="46" id="127120036"></response>
+
+<- breakpoint_set -i 47 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 53
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="47" id="127120037"></response>
+
+<- breakpoint_set -i 48 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/RegisterController.php -n 65
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="48" id="127120038"></response>
+
+<- breakpoint_set -i 49 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 52
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="49" id="127120039"></response>
+
+<- breakpoint_set -i 50 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 47
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="50" id="127120040"></response>
+
+<- breakpoint_set -i 51 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 51
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="51" id="127120041"></response>
+
+<- breakpoint_set -i 52 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/LoginController.php -n 36
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="52" id="127120042"></response>
+
+<- breakpoint_set -i 53 -t line -f file://C:/OSPanel/domains/blog/app/Http/Controllers/Auth/RegisterController.php -n 58
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="53" id="127120043"></response>
+
+<- breakpoint_set -i 54 -t line -f file://C:/OSPanel/domains/blog/routes/web.php -n 20
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="54" id="127120044"></response>
+
+<- stack_get -i 55
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="55"><stack where="{main}" level="0" type="file" filename="file:///C:/OSPanel/domains/blog/routes/web.php" lineno="14"></stack></response>
+
+<- run -i 56
+-> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="http://xdebug.org/dbgp/xdebug" command="run" transaction_id="56" status="stopping" reason="ok"></response>
+
+<- run -i 57
+Log closed at 2018-01-26 21:50:39
+
